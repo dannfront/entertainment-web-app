@@ -8,7 +8,7 @@ function HeaderCard({element,windowImage,title}) {
                 <Bookmarked element={element} />
             </button>
             <button className="play-button absolute rounded-3xl top-[40%] right-[50%] transform translate-x-1/2 flex gap-5 items-center p-2">
-                <img src="/public/assets/icon-play.svg" alt="icon-play" />
+                <img src="/assets/icon-play.svg" alt="icon-play" />
                 <p className="text-pure-white">Play</p>
             </button>
         </header>
