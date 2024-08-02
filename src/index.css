@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+}
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.outlet {
+    grid-column: 2;
+}
+
+.container {
+    width: 90%;
+    margin: 2.30rem auto 0;
+}
+
+
+.input-search {
+    background-image: url('/public/assets/icon-search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    background-color: #10141E;
+    width: 100%;
+    padding-left: 40px;
+    color: white;
+}
+
+.input-search:focus {
+    outline: none;
+    border-bottom: 1px solid #5A698F;
+}
+
+
+.background-bookmarked {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.play-button {
+    background-color: rgb(255, 255, 255, 0.4);
+
+    display: none;
+}
+
+.background-bookmarked:hover .bookmark-empty path {
+    stroke: black;
+    transition: 0.3s;
+}
+
+.header-card:hover .play-button {
+    display: flex;
+}
+
+
+.image-m-s:hover {
+    filter: brightness(0.5);
+    transition: all 0.3s;
+}
+
+.info-text {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.grid-movies-series {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    @screen md {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @screen lg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.hide-scrollbar {
+    overflow-x: auto;
+    scrollbar-color:#161D2F #10141E ;
+}
+
