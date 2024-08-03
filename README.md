@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://entertainment-web-fhghnvpl0-aleksfedotov1.vercel.app/)
+- [Solution URL]()
+- [Live Site URL](https://dannfront-entreteiment-web-app.netlify.app/)
 
 ## My process
 
